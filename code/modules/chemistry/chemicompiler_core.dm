@@ -370,7 +370,7 @@
 							ax = 0*/
 				if("#") //move individual reagent from container
 					loopUsed = 30
-					isolateReagent(sx, tx, ax, data)
+					isolateReagent(sx, tx, ax, data[dp+1])
 				else
 
 			if(data.len < dp + 1)
