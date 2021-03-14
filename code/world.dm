@@ -523,6 +523,10 @@ var/f_color_selector_handler/F_Color_Selector
 	tgui_process.setup()
 	ticker_process.setup()
 
+	UPDATE_TITLE_STATUS("Setting up timers")
+	Z_LOG_DEBUG("World/Init", "Timer setup...")
+	timers_controller = new
+
 	Z_LOG_DEBUG("World/Init", "Building area sims scores...")
 	if (global_sims_mode)
 		for (var/area/Ar in world)
